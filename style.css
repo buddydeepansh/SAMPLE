@@ -1,10 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
 * {
   font-family: Dongle;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+body{
+    background-color: rgb(214, 209, 202);
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.4rem;
+    text-align: justify;
+    padding-right: 2rem;
+    line-height: 1.5;
 }
 .externalcss {
-  color: yellow;
+  color: rgb(89, 0, 255);
 }
 #table_one{
     border: 1px solid;
