@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOCUMENTATION SAMPLE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #internal {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table_one">
+        <caption>TABLE OF CONTENTS</caption>
+       <!-- <thead>
+            <tr>
+                <td>TAG 1</td>
+                <td>TAG 2</td>
+                <td>TAG 3</td>
+                <td>TAG 4</td>
+            </tr>
+        </thead>-->
+        <tbody>
+            <tr>
+                <td><a href="#HTML">HTML INTRODUCTION</a></td>
+                <td><a href="#extension">.html EXTENSON</a></td>
+                <td><a href="#structure">STRUCUTRE OF HTML</a></td>
+                <td><a href="#compiler">COMPILER, INTERPRETER & HTML PARSER</a></td>
+            </tr>
+            <tr>
+                <td><a href="#devtools">DEVELOPER TOOLS</a></td>
+                <td><a href="#tags">HTML TAGS</a></td>
+                <td><a href="#headings">HEADING TAG  &lt;h&gt;</a></td>
+                <td><a href="#anchor">ANCHOR TAG</a></td>
+            
+            </tr>
+            <tr>
+                <td><a href="#urls">ABSOLUTE & RELATIVE URL'S</a></td>
+                <td><a href="#target_attribute">TARGET ATTRIBUTE</a></td>
+                <td><a href="#download_attribute">DOWNLOAD ATTRIBUTE</a></td>
+                <td><a href="#image">IMAGE TAG</a></td>
+            </tr>
+            <tr>
+                <td><a href="#table">HTML TABLES</a></td>
+                <td><a href="#bold">BOLD & STRONG TAG</a></td>
+                <td><a href="#italic">ITALIC & EMPHASIS TAG</a></td>
+                <td><a href="#spans">SPAN TAG</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="#css_intro">CSS INTRODUCTION</a></td>
+                <td><a href="#inline_css">INLINE CSS</a></td>
+                <td><a href="#internal_css">INTERNAL CSS</a></td>
+                <td><a href="#external_css">EXTERNAL CSS</a></td>
+
+            </tr>
+            <tr>
+                <td><a href="#navigate">NAVIGATION</a></td>
+                <td><a href="#lazy_loading">LAZY LOADING</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>HTML DOCUMENTATION</h2>
+    <h2><a href="#table1">table2</a></h2>
+    <ul type="square">
+
+        <li>
+            <h3 id="HTML">HTML</h3>
+            <p>
+                HTML stands for Hyper Text Markup Language, and it basically describes the structure of a web page, how
+                the page is going to look, details inside the page , it’s appearance.
+                It is not a programming language, rather it is a markup language, as there is no logical coding
+                required. The word hypertext means linking one web page with another webpage.
+                Html has many tags such as &lt;p&gt;, &lt;h1&gt;,&lt;div&gt; and many more by which one can define a
+                structure of their
+                webpage. Html is not a case sensitive language so the tags
+                &lt;H1&gt; & &lt;h1&gt; works in a similar way.
+                <br>
+                Let us discuss a HTML tag:
+                &lt;p&gt; This is Deepansh Agrawal’s documentation on HTML. &lt;/p&gt;
+                So the output will be:
+            <p> This is Deepansh Agrawal’s documentation on HTML.</p>
+            Every tag contains an opening and a closing part. Some of the tags do not require both opening and closing
+            tags such as &lt;/br&gt; which can be used to break a new line.
+
+            </p>
+        </li>
+        <li>
+            <h3 id="extension">EXTENSION (.html / .html)</h3>
+            <p>
+                The extension of html files is ".html" or ".htm". Since older versions of Windows only used three
+                letters for an extension, this is why .htm but the newer browser accepts .html-based versions also. So,
+                broadly speaking, the extension tells the browser that the file is an html file.
+            </p>
+        </li>
+
+        <li>
+            <h3 id="structure">STRUTURE OF HTML</h3>
+            <p>
+                We can understand HTML’s web page structure using a tree data structure.
+                Every tree has a root node, then it has 2 child nodes i.e. Left child node and right child node. Then
+                each child of the root also has 2 child nodes and this structure continues. So in the case of HTML we
+                can describe html as a root node and it has 2 child nodes which are the head and the body section. Then
+                the head section also has child nodes such as title, links, scrips and many more. Similarly the body
+                section also has child nodes such as script, image,p, div, ect.
+                The structure of the webpage defines the flow of tags in which the web page will appear.
+                <br>
+                Below is a visual representation of html as a tree data structure.
+            </p>
+            <p align="center">
+                <img src="images/html tree structure.png" width="400px" height="200px" alt="HTML TREE STRUCTURE">
+            </p>
+        </li>
+
+
+        <li>
+            <h3 id="compiler">COMPILER, INTERPRETER & HTMLPARSER</h3>
+            <p>
+                A compiler takes the entire program in one go. It generates an intermediate machine code. It is best
+                suited for the production environment. The compiler used by programming languages such as C,C++, java,
+                etc. It generates errors on compile time only. <br>
+                Whereas an interpreter takes a single line of code at a time. It never produces an intermediate machine
+                code. It is best suited for a software development environment. It is used by languages such as python,
+                perl, ruby, etc <br>
+                Parser or we can use HTMLParser for html. Parsing means analyzing and converting a program into an
+                internal format that a runtime environment can actually run.
+                Initially when we open a html file in a browser, it converts the stream of characters into tokens and
+                this process is called tokenization. Then after tokenization, nodes are created from the tokens. These
+                nodes are then converted into a DOM i.e. document object model as a tree structure.
+                <br>
+            </p>
+        </li>
+
+        <li>
+            <h3 id="devtools">DEVELOPER TOOLS</h3>
+            <p>
+                So, basically developer tools are the modern tools provided by the web browser which are being used by
+                the developer to test, debug, view source code of their website. The main task of developer tools can be
+                that a person can open the developer tools and scroll to a particular section of a web page and there
+                they can test, debug or change their design. <br>
+                Similarly dev tools are being used to understand the structure of a web page or how the elements are
+                being aligned over one another. We can use developer tools in almost all browsers. In google chrome we
+                can enter developer tools section either by right click -> inspect, or by the shortcut key : Ctrl +
+                Shift + I. <br>
+                As developer tools we can also view the source code of any webpage by right click -> view source. In
+                this way if we are not a developer of that webpage, then we can see the source code as how the developer
+                has designed the page.
+
+            </p>
+        </li>
+
+        <li>
+            <h3 id="tags">HTML TAGS / ELEMENTS</h3>
+            <p>So there are many many tags in html which have separate roles or work to do. For example an <image> tag
+                    will let you add an image to your webpage or an <a> tag which is an anchor tag allows you to add
+                        links to your webpage.
+                        Let us take a tag and understand it’s syntax:
+                        &lt;p&gt; This is a paragraph tag. &lt;/p&gt;
+                        There are 3 main parts: <br>
+                        The opening tag: In case of an opening tag it consists of the tag within the angle brackets and
+                        tells the browser that the particular rag is being started. In the above case &lt;p&gt; is the
+                        opening
+                        tag. <br>
+                        The closing tag: In case of a closing tag,it tells the browser that the following tag is now
+                        being closed and it is also between angle braces.
+                        In the above example &lt;/p&gt; acts as a closing paragraph tag. <br>
+                        The content: The content refers to the data which you are writing between the opening and
+                        closing tags.
+                        In the above example “This is a paragraph tag.” is the content.
+            </p>
+        </li>
+
+        <li>
+            <h3 id="headings"> &lt;h&gt; ELEMENT </h3>
+            <p>
+                The heading element refers to the heading of a paragraph or text written in big/bold letters. Heading is
+                used to highlight important topics. Search engines use headings for indexing and structuring the content
+                of a web page.
+                There are 6 types of heading section elements from
+                The heading element refers to the heading of a paragraph or text written in big/bold letters. Heading is
+                used to highlight important topics. Search engines use headings for indexing and structuring the content
+                of a web page.
+                There are 6 types of heading section elements from
+                &lt;h1&gt; to &lt;h6&gt;, as &lt;h1&gt; being the largest and boldest and moving towards &lt;h6&gt;
+                smallest.
+                Ex:
+            <h2> This is a type of h2 heading. </h2>
+
+
+            </p>
+        </li>
+        <br>
+
+        <li>
+            <h3 id="anchor">ANCHOR &lt;a&gt; ELEMENT </h3>
+            <p>
+                The anchor element is used to either create a hyperlink of other websites or create a hyperlink to mail
+                or phone. It also has both opening and closing tags so the content between the &lt;a&gt; & &lt;/a&gt;
+                can be
+                displayed as a link and whenever a cursor points towards the links the user can redirect to the
+                particular link or mail or phone.
+                The anchor tag generally contains a href attribute in which we provide the link where we want to
+                redirect the user if they click on it. The new link can open in the same tab or new tab/window depending
+                upon the value of the target attribute. <br>
+                Ex:
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">
+                    Click here to visit the documentation on &lt;a&gt; element.
+                </a>
+            </p>
+            <h4 id="urls">Absolute and Relative URL</h4>
+            <p>
+                Absolute urls are the url’s which contain every data related to the link or the anchored webpage /
+                object. It consists of domain name, protocol , etc. Absolute urls are best for external website links or
+                to prevent web scraping, disallowing duplicate contents such as the same url with or without http.
+                Example of absolute url is : <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target">Absolute URL </a>
+                Relative urls are the urls which are mostly used for linking the internal files, webpages, images or
+                other objects. So that the developers don't have to write the full address of the object instead
+                they can just add the relative path of the object from their current object file. The relative path
+                starts with the forward slash and leads the browser to stay within the current site. Relative url’s
+                load faster as compared to absolute urls.
+                Example of relative url: <a href="/log.txt">log.txt </a>
+
+            </p>
+            <h4 id="target_attribute">Target attribute</h4>
+            <p>
+                Target is an attribute of anchor tag by which we can decide and tell the browser where to open the link
+                anchored. The target attribute can open a link in the same iframe, same window, same tab, different
+                window/tab, different iframe, etc.
+                Example of target: <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target"
+                    target="_blank"> Click here to open mdn docs in the new tab. </a>
+            </p>
+            <h4 id="download_attribute">download attribute</h4>
+            <p>The anchor tag has another very useful attribute known as download. Whenever we click on a link wrapped
+                inside an anchor tag, it open up in a new page or same tab. But if we add the download attribute inside
+                the anchor tag then it will pop up a dialog box and ask the user to save the file or object instead of
+                opening it. The value we give in double quotes of download attribute takes the filename which we want to
+                give user to save the file.
+                Ex: <a href="images/myimage1.jpg" download="myimage2.jpg"> Click to download </a>
+            </p>
+
+        </li>
+        <li>
+            <h3 id="image"> IMAGE &lt;img&gt; ELEMENT </h3>
+            <p>
+                The image element is used to embed the images in your web pages to make your webpage more interactive to
+                users. The image element does not have a closing tag, instead the best practice suggests to use a “/” in
+                the &lt;img&gt; tag.
+                Image element has the following set of attributes such as src which takes either the url of the image
+                (in case if the image is being taken from the internet) or the relative path (in case if the image is
+                stored locally in your computer).
+                Image element also have an attribute alt which is very useful in cases if a browser cannot load the
+                image or the image is corrupted for some reasons then the text written in the alt attribute will be
+                displayed instead of the image so the user gets the idea of what the image was all about.
+                Html supports each type of image formats such as jpeg, png, svg, webp, etc.
+                Ex:<br>
+            <p align="center">
+                <img src="images/myimage1.jpg" height="10%" width="10%" alt="Sunflower image" />
+            </p>
+
+            </p>
+        </li>
+
+
+        <li>
+            <h3 id="table">TABLE &lt;table&gt; ELEMENT </h3>
+            <p>
+                The &lt;table&gt; element is used to display data in a two-dimensional tabular way where the table
+                contains rows and columns. Each cell in a row contains a data. A table is also used to quickly see
+                relationships between 2 columns.
+                There are many sub-elements in a
+                &lt;table&gt; element such as &lt;thead&gt;, &lt;th&gt;,
+                &lt;tbody&gt; , &lt;tb&gt;, &lt;td&gt;, etc.
+                Below is an example of HTML Table.
+                <br>
+                <xmp>
+                    <table style="border-spacing: 10px;">
+                        <thead>
+                            <tr>
+                                <td>NAME</td>
+                                <td>Age</td>
+                                <td>GENDER</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Deepansh</td>
+                                <td>22</td>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <td>Aashu</td>
+                                <td>20</td>
+                                <td>Male</td>
+                            </tr>
+                            <tr>
+                                <td>Mahima</td>
+                                <td>21</td>
+                                <td>Female</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </xmp>
+            </p>
+            <table style="border-spacing: 10px;" id="table1">
+                <thead>
+                    <tr>
+                        <td>NAME</td>
+                        <td>Age</td>
+                        <td>GENDER</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Deepansh</td>
+                        <td>22</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Aashu</td>
+                        <td>20</td>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <td>Mahima</td>
+                        <td>21</td>
+                        <td>Female</td>
+                    </tr>
+                </tbody>
+            </table>
+        </li>
+
+        <li>
+            <h3 id="bold">BOLD &lt;b&gt; & STRONG &lt;strong&gt; ELEMENT</h3>
+            <p>
+                The html element &lt;b&gt; was used to make the content bold-face or you may say to bring the reader’s
+                immediate attention to the bolded text. However the best practices suggest that we should use
+                &lt;strong&gt; element instead of &lt;b&gt; element to bold the text. We can also use the font-weight
+                attribute
+                to increase the boldness of the text.
+                Below is an example of both &lt;b&gt; and &lt;strong&gt; elements. <br>
+                <b> This is &lt;b&gt; element. </b> <br>
+                <strong> This is &lt;strong&gt; element. </strong>
+
+            </p>
+        </li>
+        <li>
+            <h3 id="italic">EMPHASIS &lt;em&gt; ITALIC &lt;i&gt; ELEMENT</h3>
+            <p>
+                The &lt;i&gt; tag displays the text in italic. Like the &lt;b&gt; tag, the &lt;i&gt; tag is also used
+                for presentation
+                purposes. It represents some part of a text in an alternate voice or mood or something that
+                indicates a different quality of text.
+                The &lt;em&gt; tag specifies the stress emphasis of its contents. It can be used for changing the
+                meaning of a sentence. The text within this tag is also displayed in italic.
+                <br>
+                For Example: <br> <i>This is &lt;i&gt; element.</i> <br>
+                <em>This is &lt;em&gt; element.</em>
+            </p>
+        </li>
+
+        <li>
+            <h3 id="spans">SPAN &lt;span&gt; ELEMENT </h3>
+            <p>&lt;span&gt; element is a simple container tag which is used to contain elements on which we can apply a
+                similar type of styling or javascript by giving the span an id or class. Span itself don't have any
+                kind of properties and it have very similar features as of &lt;div&gt; unlike &lt;span&gt; is an inline
+                display
+                type of element. </p> <br>
+            For ex: ```
+            <span>
+                <h5>This is Span Heading.</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </span>```
+            <span>
+                <h5>This is Span Heading.</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </span>
+        </li>
+
+
+
+    </ul>
+    <h1 id="css_intro">CSS</h1>
+    <ul>
+
+        <li>
+            <h3 id="css">CSS</h3>
+            <p>CSS stands for Cascading Style sheets which is a stylesheet language used to design out html pages or
+                xml. It describes how the elements of html can be displayed / rendered on the screen to the user. We can
+                change the properties of elements such as color, background color, font size, alignment, etc using css.
+                CSS is included using the style attribute.
+                <br>
+            <ol>
+                <li>
+                    <h4 id="inline_css">INLINE CSS</h4>
+                    <p>Inline CSS is used to add css to a particular html element only. Inline css is not recommended if
+                        our html code is large as it reduces the indexing. It is good only for small html codes.
+
+                        <br>
+                        Ex: <xmp>
+                            <h5 style="color:red;"> Inline CSS </h5>
+                        </xmp>
+                    <h5 style="color:red;"> Inline CSS </h5>
+                    </p>
+
+                </li>
+                <li>
+                    <h4 id="internal_css">INTERNAL CSS</h4>
+                    <p>
+
+                        Instead of writing css everywhere in the html elements we can write whole css for the html file
+                        under the head section using the style tags.
+                        <br>Ex:
+
+                    <p id="internal">Lorem ipsum dolor sit amet consectetur.</p>
+
+                    </p>
+                </li>
+                <li>
+                    <h4 id="external_css">EXTERNAL CSS</h4>
+                    <p>
+
+                        The best practice of using CSS is by External CSS. In this case we make an additional CSS file
+                        using a .css extension and then link this file to our html file using the
+                        &lt;link&gt; element in the head section.
+                        Ex: The Code in CSS File: <br>
+                        <xmp>
+                            .externalcss{
+                            color: yellow;
+                            }
+                        </xmp>
+                        <br>
+                        The Code in HTML File: <br>
+                        <xmp>
+                            <p class="externalcss">Lorem ipsum dolor sit amet.</p>
+                        </xmp>
+                    <p class="externalcss">Lorem ipsum dolor sit amet.</p>
+                    </p>
+                </li>
+            </ol>
+            </p>
+        </li>
+        <li>
+            <h3 id="navigate">
+                NAVIGATE FROM SECTIONS USING ID
+            </h3>
+            <p>
+                We can navigate from one section to another of the same webpage by using
+                <a> tag and using CSS ID’s.
+                    Suppose we want to navigate to id “navigate” then we will create
+                    an <a> tag by giving it the id in
+                        the href attribute. <br>
+                        Ex: <br>
+                        <span id="navigate">This is navigated place.</span>
+                        <br>
+                        <a href="#navigate">Click here to navigate</a>
+            </p>
+        </li>
+
+        <li>
+            <h3 id="lazy_loading">Lazy Loading</h3>
+            <p>Lazy loading is used to achieve faster rendering of web pages. Nowadays the size of files and images have
+                been increased. So the larger file size takes more time to get downloaded and rendered in the user’s
+                browser. To remove this extra time we can use the concept of lazy loading where we can add the attribute
+                loading and set it to lazy for images or iframes. This makes the page download faster and then the
+                images may get downloaded when required. For example, if we take an example of an e-commerce website,
+                then it’s home page has many sections such as cart, account, wallet, etc. But if we apply lazy loading
+                then only the home page files gets downloaded initially not the whole web application, which saves
+                user’s time and data.</p>
+            <br>
+            Ex: 
+            <br><center><img src="images/html tree structure.png" height="50%" width="50%" loading="lazy"></center>
+        </li>
+    </ul>
+</body>
+
+</html>

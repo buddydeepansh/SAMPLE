@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap");
+* {
+  font-family: Dongle;
+  font-size: 1rem;
+}
+.externalcss {
+  color: yellow;
+}
+#table_one{
+    border: 1px solid;
+    background-color: #57A773;
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+#table_one caption{
+    color: coral;
+    font-size: larger;
+    font-weight: bolder;
+}
+#table_one td{
+margin: 0 auto 0 auto;
+}
+
+#table_one tr{
+    border: 10px solid bisque;
+}
+
+#table_one a{
+    text-align: justify;
+    text-decoration: none;
+    color: #822E81;
+    font-weight: 700;
+}
+#table_one a:hover{
+    color: brown;
+}
